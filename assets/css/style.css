@@ -570,16 +570,23 @@ nav a:hover {
 
 
 .contact-container {
-    max-width: var(--max-width);
+    width: 100%;
+    max-width: 1000px;
 
-    margin: auto;
+    margin: 0 auto;
 }
 
 
+/* =========================================
+   CONTACT HEADER
+   ========================================= */
+
 .contact-header {
+    text-align: center;
+
     max-width: 700px;
 
-    margin-bottom: 70px;
+    margin: 0 auto 70px auto;
 }
 
 
@@ -597,7 +604,7 @@ nav a:hover {
 }
 
 
-.contact-header > p:not(.section-label) {
+.contact-header p {
     color: var(--grey);
 
     font-size: 17px;
@@ -606,59 +613,67 @@ nav a:hover {
 }
 
 
-/* Contact content */
+/* =========================================
+   CONTACT CARDS
+   ========================================= */
 
 .contact-content {
     display: grid;
 
     grid-template-columns:
-        0.8fr 1.2fr;
+        repeat(3, 1fr);
 
-    gap: 80px;
-
-    align-items: start;
+    gap: 25px;
 }
 
 
-.contact-info {
-    padding-top: 10px;
-}
+.contact-card {
+    background: white;
 
+    min-height: 220px;
 
-.contact-info h2 {
-    font-size: 36px;
+    padding: 35px 25px;
 
-    margin-bottom: 20px;
-}
+    border-radius: 8px;
 
-
-.contact-info > p {
-    color: var(--grey);
-
-    line-height: 1.7;
-
-    margin-bottom: 40px;
-}
-
-
-/* Contact information items */
-
-.contact-item {
     display: flex;
+
+    flex-direction: column;
 
     align-items: center;
 
-    gap: 20px;
+    justify-content: center;
 
-    margin-bottom: 25px;
+    text-align: center;
+
+    color: inherit;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 
-.contact-icon {
-    width: 50px;
-    height: 50px;
+.contact-card:hover {
+    transform: translateY(-8px);
 
-    flex-shrink: 0;
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================
+   CONTACT ICON
+   ========================================= */
+
+.contact-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 20px;
 
     border-radius: 50%;
 
@@ -671,135 +686,59 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 
-    font-size: 15px;
+    font-size: 18px;
 
     font-weight: 700;
 }
 
 
-.contact-item h3 {
-    font-size: 16px;
+/* =========================================
+   CONTACT TEXT
+   ========================================= */
 
-    margin-bottom: 5px;
+.contact-card-text h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
 }
 
 
-.contact-item a {
+.contact-card-text p {
     color: var(--grey);
 
-    transition: color 0.2s ease;
-}
-
-
-.contact-item a:hover {
-    color: var(--orange);
-}
-
-
-/* Contact form */
-
-.contact-form-container {
-    background: white;
-
-    padding: 40px;
-
-    border-radius: 8px;
-
-    box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.08);
-}
-
-
-.contact-form {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 20px;
-}
-
-
-.form-group {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 8px;
-}
-
-
-.form-group label {
     font-size: 14px;
 
-    font-weight: 700;
+    line-height: 1.5;
+
+    word-break: break-word;
 }
 
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-
-    padding: 14px 15px;
-
-    border: 1px solid #ddd;
-
-    border-radius: 5px;
-
-    background: #fafafa;
-
-    font-family: inherit;
-
-    font-size: 14px;
-
-    outline: none;
-
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-.form-group textarea {
-    resize: vertical;
-}
-
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: var(--orange);
-
-    box-shadow:
-        0 0 0 3px rgba(255, 90, 31, 0.1);
-}
-
-
-.contact-form .btn {
-    border: none;
-
-    cursor: pointer;
-
-    align-self: flex-start;
-}
 
 /* =========================================
    RESUME PAGE
    ========================================= */
 
 .resume-page {
-    min-height: calc(100vh - 75px);
+    width: 100%;
+    height: calc(100vh - 75px);
 
     padding: 30px 0 0 0;
 
     background: var(--light);
+
+    display: flex;
+    flex-direction: column;
 }
 
 
 .resume-container {
     width: 100%;
-
-    max-width: none;
+    height: 100%;
 
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -813,18 +752,17 @@ nav a:hover {
     padding: 0 40px 25px 40px;
 
     display: flex;
-
     align-items: flex-end;
-
     justify-content: space-between;
 
     gap: 40px;
+
+    flex-shrink: 0;
 }
 
 
 .resume-header h1 {
     font-size: 60px;
-
     line-height: 1.1;
 
     margin-bottom: 15px;
@@ -844,40 +782,39 @@ nav a:hover {
 
 
 /* =========================================
-   RESUME PDF VIEWER
+   PDF VIEWER
    ========================================= */
 
 .resume-viewer {
     width: 100%;
 
-    height: calc(100vh - 170px);
+    flex: 1;
+
+    min-height: 0;
 
     background: white;
 
     overflow: hidden;
 
-    border-radius: 0;
-
-    box-shadow: none;
+    border: none;
 }
 
 
 .resume-viewer iframe {
-    width: 100%;
+    display: block;
 
+    width: 100%;
     height: 100%;
 
     border: none;
-
-    display: block;
 }
 
 
 /* =========================================
-   RESPONSIVE
+   TABLET
    ========================================= */
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
     .resume-page {
         padding-top: 25px;
@@ -885,11 +822,12 @@ nav a:hover {
 
 
     .resume-header {
-        padding: 0 30px 20px 30px;
-
-        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
 
         align-items: flex-start;
+
+        flex-direction: column;
 
         gap: 20px;
     }
@@ -899,15 +837,14 @@ nav a:hover {
         font-size: 48px;
     }
 
-
-    .resume-viewer {
-        height: calc(100vh - 180px);
-    }
-
 }
 
 
-@media (max-width: 500px) {
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media screen and (max-width: 500px) {
 
     .resume-page {
         padding-top: 20px;
@@ -915,7 +852,10 @@ nav a:hover {
 
 
     .resume-header {
-        padding: 0 20px 20px 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        gap: 15px;
     }
 
 
@@ -924,8 +864,10 @@ nav a:hover {
     }
 
 
-    .resume-viewer {
-        height: calc(100vh - 190px);
+    .resume-header .btn {
+        width: 100%;
+
+        text-align: center;
     }
 
 }
