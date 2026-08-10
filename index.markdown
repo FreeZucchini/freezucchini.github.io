@@ -58,22 +58,26 @@ title: Portfolio
             <article class="project-card">
 
                 <div class="project-card-image">
-                    Project Image
+                    <img
+                        src="{{ '/assets/images/rad.jpg' }}"
+                    >
                 </div>
 
                 <div class="project-card-content">
 
-                    <h3>Project Name</h3>
+                    <h3>Radiation Detector</h3>
 
                     <p>
-                        Short description of what this project
-                        does and what problem it solves.
+                        A space-rated radiation detector that uses a
+                        dual-opamp analogue signal processing circuit to process
+                        radiation data collected via an SiPM. It is one of the payloads on
+                        the APSS-3 CubeSat.
                     </p>
 
                     <div class="tags">
-                        <span>C++</span>
-                        <span>Svelte</span>
-                        <span>Docker</span>
+                        <span>Altium Designer</span>
+                        <span>Soldering and Testing</span>
+                        <span>Embedded C</span>
                     </div>
 
                 </div>
