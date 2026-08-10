@@ -60,6 +60,7 @@ title: Portfolio
                 <div class="project-card-image">
                     <img
                         src="{{ '/assets/images/rad.jpg' | relative_url }}"
+                        alt="Radiation Detector PCB Image"
                     >
                 </div>
 
