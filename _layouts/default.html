@@ -28,27 +28,35 @@
 
         <div class="nav-container">
 
-            <a href="{{ '/' | relative_url }}" class="logo">
+            <a
+                href="{{ '/' | relative_url }}"
+                class="logo"
+            >
                 {{ site.author.name }}
             </a>
 
+
             <nav>
 
-                <a href="#projects">
+                <a href="{{ '/#projects' | relative_url }}">
                     Projects
                 </a>
 
-                <a href="experience">
+                <a href="{{ '/experience/' | relative_url }}">
                     Experience
                 </a>
 
-                <a href="resume">
+                <a href="{{ '/resume/' | relative_url }}">
                     Resume
                 </a>
 
             </nav>
 
-            <a href="contact" class="nav-button">
+
+            <a
+                href="{{ '/contact/' | relative_url }}"
+                class="nav-button"
+            >
                 Contact Me
             </a>
 
