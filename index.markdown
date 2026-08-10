@@ -11,7 +11,7 @@ title: Portfolio
             <p class="greeting">Hi</p>
 
             <h1>
-                I'm <span>{{ Ramanujan }}</span>
+                I'm <span>{{ site.author.name }}</span>
             </h1>
 
             <h2>
