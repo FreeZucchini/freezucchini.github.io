@@ -8,29 +8,25 @@ title: Portfolio
     <div class="hero-content">
 
         <div class="hero-text">
-            <p class="greeting">Hi</p>
+            <p class="greeting">Hey</p>
 
             <h1>
                 I'm <span>{{ site.author.name }}</span>
             </h1>
 
             <h2>
-                A Computer Systems Engineer
+                A Computer Systems Engineering Student
             </h2>
 
             <p class="hero-description">
-                I design and build software, embedded systems, and
-                other engineering projects. This portfolio showcases
-                some of the things I've worked on.
+                This is a little space where I showcase some 
+                of the projects I have worked on. They range from a simple LoRa PCB
+                to a the qualification of a 1U CubeSat for space!
             </p>
 
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">
                     View Projects
-                </a>
-
-                <a href="#contact" class="btn btn-secondary">
-                    Contact Me
                 </a>
             </div>
         </div>
@@ -42,50 +38,6 @@ title: Portfolio
                     alt="{{ site.author.name }}"
                 >
             </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="about" class="about">
-
-    <div class="about-container">
-
-        <div class="about-image">
-            <div class="image-ring">
-                <img
-                    src="{{ '/assets/images/profile.jpg' | relative_url }}"
-                    alt="{{ site.author.name }}"
-                >
-            </div>
-        </div>
-
-        <div class="about-content">
-
-            <p class="section-label">ABOUT ME</p>
-
-            <h2>
-                Computer Systems
-                <span>Engineer</span>
-            </h2>
-
-            <p>
-                I'm interested in the intersection of software,
-                hardware and systems engineering.
-            </p>
-
-            <p>
-                My projects span areas such as embedded systems,
-                C++, Python, web development, distributed systems
-                and software architecture.
-            </p>
-
-            <a href="#experience" class="btn btn-primary">
-                My Experience
-            </a>
-
         </div>
 
     </div>
