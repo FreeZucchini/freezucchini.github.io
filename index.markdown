@@ -89,22 +89,27 @@ title: Portfolio
             <article class="project-card">
 
                 <div class="project-card-image">
-                    Project Image
+                    <img
+                        src="{{ '/assets/images/lipo-charger.jpeg' | relative_url }}"
+                        alt="Multi-Battery Charger PCB"
+                    >
                 </div>
 
                 <div class="project-card-content">
 
-                    <h3>Project Name</h3>
+                    <h3>Multi LiPo Battery Charger</h3>
 
                     <p>
-                        Short description of what this project
-                        does and what problem it solves.
+                        This PCB can charge up to 6 LiPo batteries
+                        simultaneously. It was designed to charge batteries during our
+                        annual pico-satellite competition where teams would use those batteries
+                        for their payloads.
                     </p>
 
                     <div class="tags">
-                        <span>Python</span>
-                        <span>PyQt</span>
-                        <span>Machine Learning</span>
+                        <span>High Power PCB Routing</span>
+                        <span>Power Delivery ICs</span>
+                        <span>High Power PCB Testing</span>
                     </div>
 
                 </div>
@@ -115,22 +120,25 @@ title: Portfolio
             <article class="project-card">
 
                 <div class="project-card-image">
-                    Project Image
+                    <img
+                        src="{{ '/assets/images/kessler.jpeg' | relative_url }}"
+                        alt="APSS-2 PCB"
+                    >
                 </div>
 
                 <div class="project-card-content">
 
-                    <h3>Project Name</h3>
+                    <h3>Thermal Vacuum Qualification of APSS-2</h3>
 
                     <p>
-                        Short description of what this project
-                        does and what problem it solves.
+                        Qualified the APSS-2 PCB for space conditions by helping out
+                        with the setup, debugging and software of the thermal-vacuum test. 
                     </p>
 
                     <div class="tags">
-                        <span>Embedded</span>
-                        <span>C</span>
-                        <span>Hardware</span>
+                        <span>Sensor Calibration</span>
+                        <span>Hardware and Harness Setup</span>
+                        <span>Space-Systems</span>
                     </div>
 
                 </div>
