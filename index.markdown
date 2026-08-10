@@ -59,7 +59,7 @@ title: Portfolio
 
                 <div class="project-card-image">
                     <img
-                        src="{{ '/assets/images/rad.jpg' }}"
+                        src="{{ '/assets/images/rad.jpg' | relative_url }}"
                     >
                 </div>
 
