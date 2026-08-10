@@ -788,20 +788,30 @@ nav a:hover {
 .resume-page {
     min-height: calc(100vh - 75px);
 
-    padding: 80px 40px;
+    padding: 30px 0 0 0;
 
     background: var(--light);
 }
 
 
 .resume-container {
-    max-width: 1100px;
+    width: 100%;
 
-    margin: auto;
+    max-width: none;
+
+    margin: 0;
 }
 
 
+/* =========================================
+   RESUME HEADER
+   ========================================= */
+
 .resume-header {
+    width: 100%;
+
+    padding: 0 40px 25px 40px;
+
     display: flex;
 
     align-items: flex-end;
@@ -809,8 +819,6 @@ nav a:hover {
     justify-content: space-between;
 
     gap: 40px;
-
-    margin-bottom: 40px;
 }
 
 
@@ -835,19 +843,22 @@ nav a:hover {
 }
 
 
+/* =========================================
+   RESUME PDF VIEWER
+   ========================================= */
+
 .resume-viewer {
     width: 100%;
 
-    height: 1100px;
+    height: calc(100vh - 170px);
 
     background: white;
 
-    border-radius: 8px;
-
     overflow: hidden;
 
-    box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 0;
+
+    box-shadow: none;
 }
 
 
@@ -857,4 +868,64 @@ nav a:hover {
     height: 100%;
 
     border: none;
+
+    display: block;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .resume-page {
+        padding-top: 25px;
+    }
+
+
+    .resume-header {
+        padding: 0 30px 20px 30px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .resume-header h1 {
+        font-size: 48px;
+    }
+
+
+    .resume-viewer {
+        height: calc(100vh - 180px);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .resume-page {
+        padding-top: 20px;
+    }
+
+
+    .resume-header {
+        padding: 0 20px 20px 20px;
+    }
+
+
+    .resume-header h1 {
+        font-size: 42px;
+    }
+
+
+    .resume-viewer {
+        height: calc(100vh - 190px);
+    }
+
 }
