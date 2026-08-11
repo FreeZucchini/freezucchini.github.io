@@ -982,19 +982,9 @@ nav a:hover {
    ========================================= */
 
 .project-page {
-    width: 100%;
-
-    padding: 70px 40px 120px;
+    padding: 70px 0 100px;
 
     background: var(--light);
-}
-
-
-.project-page-container {
-    width: 100%;
-    max-width: 1100px;
-
-    margin: 0 auto;
 }
 
 
@@ -1005,10 +995,11 @@ nav a:hover {
 .project-back {
     display: inline-block;
 
-    margin-bottom: 55px;
+    margin-bottom: 45px;
 
     color: var(--orange);
 
+    font-size: 14px;
     font-weight: 700;
 
     text-decoration: none;
@@ -1016,11 +1007,10 @@ nav a:hover {
     transition: transform 0.2s ease;
 }
 
-
 .project-back:hover {
-    text-decoration: none;
+    transform: translateX(-4px);
 
-    transform: translateX(-5px);
+    text-decoration: none;
 }
 
 
@@ -1029,113 +1019,134 @@ nav a:hover {
    ========================================= */
 
 .project-header {
-    max-width: 850px;
+    max-width: 750px;
 
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
-
-
-.project-label {
-    margin-bottom: 12px;
-
-    color: var(--orange);
-
-    font-size: 13px;
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-}
-
 
 .project-header h1 {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
-    font-size: 64px;
+    font-size: 52px;
 
-    line-height: 1.05;
+    line-height: 1.1;
 }
-
 
 .project-header h1 span {
     color: var(--orange);
 }
 
-
-.project-subtitle {
-    max-width: 750px;
+.project-description {
+    max-width: 700px;
 
     color: var(--grey);
 
-    font-size: 20px;
+    font-size: 18px;
 
     line-height: 1.7;
 }
 
 
 /* =========================================
-   HERO IMAGE
+   MAIN PROJECT IMAGE
    ========================================= */
 
-.project-hero-image {
+.project-image-card {
     width: 100%;
 
-    height: 500px;
+    height: 420px;
 
-    margin-bottom: 80px;
+    margin-bottom: 45px;
 
     overflow: hidden;
 
-    border-radius: 10px;
-
     background: white;
 
+    border-radius: 8px;
+
     box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.08);
+        0 8px 30px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 }
 
-
-.project-hero-image img {
+.project-image-card img {
     width: 100%;
     height: 100%;
-
-    display: block;
 
     object-fit: contain;
 }
 
 
 /* =========================================
-   INTRODUCTION
+   PROJECT GRID
    ========================================= */
 
-.project-introduction {
+.project-grid {
     display: grid;
 
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    gap: 80px;
+    gap: 25px;
 
-    margin-bottom: 90px;
+    margin-bottom: 45px;
 }
 
 
-.project-section h2,
-.project-text-section h2 {
-    margin-bottom: 20px;
+/* =========================================
+   PROJECT CARDS
+   ========================================= */
 
-    font-size: 32px;
+.project-card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.project-card h2 {
+    margin-bottom: 15px;
+
+    font-size: 27px;
 
     line-height: 1.2;
 }
 
+.project-card p {
+    color: var(--grey);
 
-.project-section p,
-.project-text-section p {
-    max-width: 700px;
+    font-size: 15px;
 
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CONTENT SECTION
+   ========================================= */
+
+.project-content-section {
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    padding: 10px 0;
+}
+
+.project-content-section h2 {
+    margin-bottom: 15px;
+
+    font-size: 30px;
+}
+
+.project-content-section p {
     color: var(--grey);
 
     font-size: 16px;
@@ -1145,140 +1156,74 @@ nav a:hover {
 
 
 /* =========================================
-   TECHNICAL CONCEPTS
+   SECOND IMAGE
    ========================================= */
 
-.project-concepts ul {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 12px 30px;
-
-    margin: 0;
-
-    padding: 0;
-
-    list-style: none;
-}
-
-
-.project-concepts li {
-    position: relative;
-
-    padding-left: 18px;
-
-    color: var(--grey);
-
-    font-size: 15px;
-
-    line-height: 1.5;
-}
-
-
-.project-concepts li::before {
-    content: "•";
-
-    position: absolute;
-
-    left: 0;
-
-    color: var(--orange);
-
-    font-weight: 900;
-}
-
-
-/* =========================================
-   TEXT SECTION
-   ========================================= */
-
-.project-text-section {
-    margin-bottom: 80px;
-}
-
-
-/* =========================================
-   SECONDARY IMAGE
-   ========================================= */
-
-.project-secondary-image {
+.project-image-small {
     width: 100%;
 
-    height: 400px;
+    height: 320px;
 
-    margin-bottom: 90px;
+    margin-bottom: 45px;
 
     overflow: hidden;
 
-    border-radius: 10px;
-
     background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 }
 
-
-.project-secondary-image img {
+.project-image-small img {
     width: 100%;
     height: 100%;
-
-    display: block;
 
     object-fit: contain;
 }
 
 
 /* =========================================
-   CHALLENGE / LEARNING
+   PROJECT TAGS
    ========================================= */
-
-.project-two-column {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 70px;
-
-    margin-bottom: 90px;
-}
-
-
-.project-two-column .project-text-section {
-    margin-bottom: 0;
-}
-
-
-/* =========================================
-   TECHNOLOGIES
-   ========================================= */
-
-.project-technologies {
-    padding-top: 40px;
-
-    border-top: 1px solid #ddd;
-}
-
 
 .project-tags {
     display: flex;
 
     flex-wrap: wrap;
 
-    gap: 10px;
+    gap: 8px;
 }
 
-
 .project-tags span {
-    padding: 8px 14px;
+    padding: 7px 11px;
 
-    background: #e9e9e9;
+    background: #eeeeee;
 
-    border-radius: 5px;
+    border-radius: 4px;
 
     color: var(--dark);
 
-    font-size: 13px;
+    font-size: 12px;
 
     font-weight: 600;
+}
+
+
+/* =========================================
+   SKILLS
+   ========================================= */
+
+.project-skills {
+    padding-top: 30px;
+
+    border-top: 1px solid #ddd;
 }
 
 
@@ -1286,34 +1231,22 @@ nav a:hover {
    TABLET
    ========================================= */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
 
     .project-page {
-        padding: 60px 30px 90px;
+        padding: 55px 0 80px;
     }
-
 
     .project-header h1 {
-        font-size: 52px;
+        font-size: 45px;
     }
 
-
-    .project-hero-image {
-        height: 400px;
-    }
-
-
-    .project-introduction {
+    .project-grid {
         grid-template-columns: 1fr;
-
-        gap: 55px;
     }
 
-
-    .project-two-column {
-        grid-template-columns: 1fr;
-
-        gap: 55px;
+    .project-image-card {
+        height: 350px;
     }
 
 }
@@ -1323,50 +1256,30 @@ nav a:hover {
    MOBILE
    ========================================= */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
 
     .project-page {
-        padding: 45px 20px 70px;
+        padding: 40px 0 60px;
     }
-
-
-    .project-back {
-        margin-bottom: 40px;
-    }
-
 
     .project-header h1 {
-        font-size: 42px;
+        font-size: 38px;
     }
 
-
-    .project-subtitle {
-        font-size: 17px;
+    .project-description {
+        font-size: 16px;
     }
 
-
-    .project-hero-image {
-        height: 280px;
-
-        margin-bottom: 60px;
+    .project-image-card {
+        height: 260px;
     }
 
-
-    .project-section h2,
-    .project-text-section h2 {
-        font-size: 27px;
+    .project-image-small {
+        height: 230px;
     }
 
-
-    .project-concepts ul {
-        grid-template-columns: 1fr;
-    }
-
-
-    .project-secondary-image {
-        height: 250px;
-
-        margin-bottom: 60px;
+    .project-card {
+        padding: 25px;
     }
 
 }
