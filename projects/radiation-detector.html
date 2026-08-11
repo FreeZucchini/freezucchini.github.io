@@ -108,7 +108,7 @@ title: Radiation Detector
                     </li>
 
                     <li>
-                        Signal conditioning
+                        DC-DC Boosters
                     </li>
 
                     <li>
@@ -138,9 +138,10 @@ title: Radiation Detector
 
             <p>
                 I worked on the analogue signal-processing circuitry,
-                component selection and PCB design. I also contributed
-                to hardware testing and debugging to verify that the
-                detector behaved as expected.
+                and PCB design. I also soldered, and tested
+                the PCB successfully. Soldering was done using a hot-plate
+                and heat gun and testing was done using a power supply, 
+                multimeter and oscilloscope.
             </p>
 
         </div>
@@ -153,7 +154,7 @@ title: Radiation Detector
         <div class="project-secondary-image">
 
             <img
-                src="{{ '/assets/images/rad.jpeg' | relative_url }}"
+                src="{{ '/assets/images/rad-back.jpeg' | relative_url }}"
                 alt="Radiation Detector hardware"
             >
 
@@ -177,10 +178,14 @@ title: Radiation Detector
                 </h2>
 
                 <p>
-                    During testing, the detector output contained
-                    unexpected noise. I investigated the signal path
-                    and hardware configuration to identify possible
-                    sources before modifying and retesting the circuit.
+                    During testing, I had issues getting the opamp to output
+                    the correct amplified voltage. I went component by component and traced
+                    out the issue to a short between two pins of the opamp.
+
+                    Another issue I encountered is the I2C transmission for the 
+                    temperature sensor timing-out. I fixed this by testing the TI
+                    I2C libraries on a test sensor and porting that code to this PCB.
+
                 </p>
 
             </div>
@@ -198,10 +203,9 @@ title: Radiation Detector
 
                 <p>
                     This project strengthened my understanding of
-                    analogue signal conditioning and low-level
-                    measurements. It also taught me to approach
-                    hardware debugging systematically using measured
-                    behaviour rather than relying solely on simulation.
+                    analogue signal conditioning as the board features an amplifier
+                    and peak detector. I also learned how to route a DC-DC boost converter
+                    and how to debug communication protocols like I2C and SPI.
                 </p>
 
             </div>
@@ -223,10 +227,8 @@ title: Radiation Detector
 
                 <span>Altium Designer</span>
                 <span>Analogue Electronics</span>
-                <span>PCB Design</span>
                 <span>Embedded C</span>
                 <span>Hardware Testing</span>
-                <span>Signal Processing</span>
 
             </div>
 
