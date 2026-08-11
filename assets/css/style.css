@@ -432,7 +432,7 @@ nav a:hover {
 
 
 .project-card-image {
-    height: 200px;
+    height: 150px;
     overflow: hidden;
 
     background: #333;
@@ -450,7 +450,7 @@ nav a:hover {
 
 
 .project-card-content {
-    padding: 25px;
+    padding: 18px;
 }
 
 .project-card h3 {
@@ -467,18 +467,17 @@ nav a:hover {
 
 
 .project-card h3 {
-    font-size: 22px;
+    font-size: 19px;
 
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 
 .project-card p {
     color: var(--grey);
-
-    line-height: 1.6;
-
-    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 
@@ -1087,12 +1086,11 @@ nav a:hover {
 
 .project-grid {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 
-    grid-template-columns: 1fr 1fr;
-
-    gap: 25px;
-
-    margin-bottom: 45px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 

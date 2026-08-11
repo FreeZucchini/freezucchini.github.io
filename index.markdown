@@ -53,11 +53,11 @@ title: Portfolio
 
         <h2>My Projects</h2>
 
-        <div class="project-grid">
+        <div class="featured-project-grid">
 
             <a
                 href="{{ '/projects/radiation-detector.html' | relative_url }}"
-                class="project-card"
+                class="featured-project-card"
             >
 
                 <div class="project-card-image">
@@ -95,7 +95,7 @@ title: Portfolio
 
            <a
                 href="{{ '/projects/lipo-charger.html' | relative_url }}"
-                class="project-card"
+                class="featured-project-card"
             >
 
                 <div class="project-card-image">
@@ -132,7 +132,7 @@ title: Portfolio
 
            <a
                 href="{{ '/projects/apss-2-tvac.html' | relative_url }}"
-                class="project-card"
+                class="featured-project-card"
             >
 
                 <div class="project-card-image">
