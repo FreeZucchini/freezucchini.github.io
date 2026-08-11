@@ -53,16 +53,12 @@ title: Portfolio
 
         <h2>My Projects</h2>
 
-        <div class="featured-project-grid">
+        <div class="project-grid">
 
-<<<<<<< HEAD
             <a
                 href="{{ '/projects/radiation-detector.html' | relative_url }}"
-                class="featured-project-card"
+                class="project-card"
             >
-=======
-            <article class="project-card">
->>>>>>> parent of 715498d (Clickable project cards)
 
                 <div class="project-card-image">
                     <img
@@ -90,17 +86,13 @@ title: Portfolio
 
                 </div>
 
-            </article>
+            </a>
 
 
-<<<<<<< HEAD
-           <a
+            <a
                 href="{{ '/projects/lipo-charger.html' | relative_url }}"
-                class="featured-project-card"
+                class="project-card"
             >
-=======
-            <article class="project-card">
->>>>>>> parent of 715498d (Clickable project cards)
 
                 <div class="project-card-image">
                     <img
@@ -128,17 +120,13 @@ title: Portfolio
 
                 </div>
 
-            </article>
+            </a>
 
 
-<<<<<<< HEAD
-           <a
+            <a
                 href="{{ '/projects/apss-2-tvac.html' | relative_url }}"
-                class="featured-project-card"
+                class="project-card"
             >
-=======
-            <article class="project-card">
->>>>>>> parent of 715498d (Clickable project cards)
 
                 <div class="project-card-image">
                     <img
@@ -164,7 +152,7 @@ title: Portfolio
 
                 </div>
 
-            </article>
+            </a>
 
         </div>
 

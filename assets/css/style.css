@@ -1077,7 +1077,7 @@ nav a:hover {
     justify-content: center;
 }
 
-.project-image-card img {
+.project-hero-image img {
     width: 100%;
 
     height: 100%;
@@ -1161,7 +1161,7 @@ nav a:hover {
 /* =========================================
    CONTENT SECTION
 ========================================= */
-
+.project-content-section {
     position: absolute;
 
     left: 0;
@@ -1204,17 +1204,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
 
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-}
-
-.project-image-small img {
-    width: 100%;
-
-    height: 100%;
+    display: block;
 
     object-fit: contain;
 }
@@ -1263,6 +1253,21 @@ nav a:hover {
     padding-top: 30px;
 
     border-top: 1px solid #ddd;
+}
+
+
+/* =========================================
+   TWO-COLUMN TEXT SECTIONS
+========================================= */
+
+.project-two-column {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    margin-bottom: 90px;
 }
 
 
