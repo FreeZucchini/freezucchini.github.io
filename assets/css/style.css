@@ -388,8 +388,6 @@ nav a:hover {
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
-
-    cursor: pointer;
 }
 
 .projects .project-card:hover {
@@ -397,8 +395,6 @@ nav a:hover {
 
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.15);
-
-    text-decoration: none;
 }
 
 

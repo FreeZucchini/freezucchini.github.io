@@ -55,10 +55,14 @@ title: Portfolio
 
         <div class="featured-project-grid">
 
+<<<<<<< HEAD
             <a
                 href="{{ '/projects/radiation-detector.html' | relative_url }}"
                 class="featured-project-card"
             >
+=======
+            <article class="project-card">
+>>>>>>> parent of 715498d (Clickable project cards)
 
                 <div class="project-card-image">
                     <img
@@ -74,8 +78,8 @@ title: Portfolio
                     <p>
                         A space-rated radiation detector that uses a
                         dual-opamp analogue signal processing circuit to process
-                        radiation data collected via an SiPM. It is one of the
-                        payloads on the APSS-3 CubeSat.
+                        radiation data collected via an SiPM. It is one of the payloads on
+                        the APSS-3 CubeSat.
                     </p>
 
                     <div class="tags">
@@ -84,19 +88,19 @@ title: Portfolio
                         <span>Embedded C</span>
                     </div>
 
-                    <p class="project-link">
-                        View Project →
-                    </p>
-
                 </div>
 
-            </a>
+            </article>
 
 
+<<<<<<< HEAD
            <a
                 href="{{ '/projects/lipo-charger.html' | relative_url }}"
                 class="featured-project-card"
             >
+=======
+            <article class="project-card">
+>>>>>>> parent of 715498d (Clickable project cards)
 
                 <div class="project-card-image">
                     <img
@@ -111,8 +115,9 @@ title: Portfolio
 
                     <p>
                         This PCB can charge up to 6 LiPo batteries
-                        simultaneously. It was designed to charge batteries
-                        during our annual pico-satellite competition.
+                        simultaneously. It was designed to charge batteries during our
+                        annual pico-satellite competition where teams would use those batteries
+                        for their payloads.
                     </p>
 
                     <div class="tags">
@@ -121,19 +126,19 @@ title: Portfolio
                         <span>High Power PCB Testing</span>
                     </div>
 
-                    <p class="project-link">
-                        View Project →
-                    </p>
-
                 </div>
 
-            </a>
+            </article>
 
 
+<<<<<<< HEAD
            <a
                 href="{{ '/projects/apss-2-tvac.html' | relative_url }}"
                 class="featured-project-card"
             >
+=======
+            <article class="project-card">
+>>>>>>> parent of 715498d (Clickable project cards)
 
                 <div class="project-card-image">
                     <img
@@ -147,9 +152,8 @@ title: Portfolio
                     <h3>Thermal Vacuum Qualification of APSS-2</h3>
 
                     <p>
-                        Qualified the APSS-2 PCB for space conditions by helping
-                        with the setup, debugging and software of the
-                        thermal-vacuum test.
+                        Qualified the APSS-2 PCB for space conditions by helping out
+                        with the setup, debugging and software of the thermal-vacuum test. 
                     </p>
 
                     <div class="tags">
@@ -158,13 +162,9 @@ title: Portfolio
                         <span>Space-Systems</span>
                     </div>
 
-                    <p class="project-link">
-                        View Project →
-                    </p>
-
                 </div>
 
-            </a>
+            </article>
 
         </div>
 
