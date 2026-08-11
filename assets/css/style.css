@@ -397,11 +397,17 @@ nav a:hover {
 
 
 .project-card {
+    display: block;
+
     background: white;
 
     border-radius: 8px;
 
     overflow: hidden;
+
+    /* Remove normal <a> styling */
+    text-decoration: none;
+    color: inherit;
 
     box-shadow:
         0 8px 30px rgba(0, 0, 0, 0.08);
@@ -409,6 +415,8 @@ nav a:hover {
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
+
+    cursor: pointer;
 }
 
 
@@ -417,7 +425,10 @@ nav a:hover {
 
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.15);
+
+    text-decoration: none;
 }
+
 
 
 .project-card-image {
@@ -440,6 +451,18 @@ nav a:hover {
 
 .project-card-content {
     padding: 25px;
+}
+
+.project-card h3 {
+    color: var(--dark);
+}
+
+.project-card p {
+    color: var(--grey);
+}
+
+.project-card .tags {
+    color: var(--dark);
 }
 
 
