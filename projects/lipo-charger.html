@@ -1,0 +1,228 @@
+---
+layout: default
+title: Multi-Battery Charger
+---
+
+<section class="project-page">
+
+    <div class="project-page-container">
+
+        <!-- Back -->
+        <a
+            href="{{ '/' | relative_url }}#projects"
+            class="project-back"
+        >
+            ← Back to Projects
+        </a>
+
+
+        <!-- =========================================
+             PROJECT HEADER
+             ========================================= -->
+
+        <div class="project-header">
+
+            <p class="section-label">
+                POWER ELECTRONICS
+            </p>
+
+            <h1>
+                Lipo <span>Charger</span>
+            </h1>
+
+            <p class="project-subtitle">
+                A PCB capable of charging 6 small Lipo's simultaneously.
+            </p>
+
+        </div>
+
+
+        <!-- =========================================
+             HERO IMAGE
+             ========================================= -->
+
+        <div class="project-hero-image">
+
+            <img
+                src="{{ '/assets/images/lipo-charger.jpeg' | relative_url }}"
+                alt="Multi-Battery Charger PCB"
+            >
+
+        </div>
+
+
+        <!-- =========================================
+             PROJECT / TECHNICAL CONCEPTS
+             ========================================= -->
+
+        <div class="project-grid">
+
+            <div class="project-section">
+
+                <p class="project-label">
+                    THE PROJECT
+                </p>
+
+                <h2>
+                    What was it?
+                </h2>
+
+                <p>
+                    During our annual pico-satellite competition teams 
+                    would charge their batteries one at a time. This was inefficient and
+                    teams lost precious time to test their payloads before launch.
+                    I developed this PCB to charge 6-lipo's at once so all the teams could charge 
+                    their batteries at once.
+                </p>
+
+            </div>
+
+
+            <div class="project-section project-concepts">
+
+                <p class="project-label">
+                    TECHNICAL CONCEPTS
+                </p>
+
+                <h2>
+                    What was involved?
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Power Delivery ICs
+                    </li>
+
+                    <li>
+                        Circular PCB Design
+                    </li>
+
+                    <li>
+                        High Power PCB Routing
+                    </li>
+
+                    <li>
+                        High Power Load Testing
+                    </li>
+
+                    <li>
+                        Battery Charging ICs
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             WHAT I DID
+             ========================================= -->
+
+        <div class="project-text-section">
+
+            <p class="project-label">
+                MY CONTRIBUTION
+            </p>
+
+            <h2>
+                What I did
+            </h2>
+
+            <p>
+                I came up with the circuit design, researched into Power Delivery ICs 
+                and choose the most suitable one. After finalizing on the components I designed
+                the entire PCB, ordered it and assembled it for testing.
+            </p>
+
+        </div>
+
+
+        <!-- =========================================
+             SECOND IMAGE
+             ========================================= -->
+
+        <!-- <div class="project-secondary-image">
+
+            <img
+                src="{{ '/assets/images/rad-back.jpeg' | relative_url }}"
+                alt="Radiation Detector hardware"
+            >
+
+        </div> -->
+
+
+        <!-- =========================================
+             CHALLENGE / LEARNING
+             ========================================= -->
+
+        <div class="project-two-column">
+
+            <div class="project-text-section">
+
+                <p class="project-label">
+                    ENGINEERING CHALLENGE
+                </p>
+
+                <h2>
+                    A challenge I faced
+                </h2>
+
+                <p>
+                    I was having trouble routing the USB-C connector to the PD IC
+                    in Altium. I was struggling to route this part of the board while
+                    maintaining the signal integrity of the Channel Configuration (CC) signal.
+                    To solve this problem took a bit of trail and error, many hours and a compromise
+                    of using 2 vias to route a CC line but the routing was completed well in the end.
+                </p>
+
+            </div>
+
+
+            <div class="project-text-section">
+
+                <p class="project-label">
+                    TAKEAWAY
+                </p>
+
+                <h2>
+                    What I learned
+                </h2>
+
+                <p>
+                    This project was my first introduction to Power Electronics both in terms
+                    of circuit and PCB design. I really enjoyed learning about different USB protocols
+                    when looking into the USB C connector, and I also got a chance to broaden my PCB design experience
+                    by routing a circular PCB using the Polar Grid in Altium.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             TECHNOLOGIES
+             ========================================= -->
+
+        <div class="project-technologies">
+
+            <p class="project-label">
+                TECHNOLOGIES & SKILLS
+            </p>
+
+            <div class="project-tags">
+
+                <span>Altium Designer</span>
+                <span>Power Electronics</span>
+                <span>Hardware Testing</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
