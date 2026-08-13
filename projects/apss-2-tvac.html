@@ -1,0 +1,229 @@
+---
+layout: default
+title: APSS-2 TVAC Qualification
+---
+
+<section class="project-page">
+
+    <div class="project-page-container">
+
+        <!-- Back -->
+        <a
+            href="{{ '/' | relative_url }}#projects"
+            class="project-back"
+        >
+            ← Back to Projects
+        </a>
+
+
+        <!-- =========================================
+             PROJECT HEADER
+             ========================================= -->
+
+        <div class="project-header">
+
+            <p class="section-label">
+                SPACE SYSTEMS
+            </p>
+
+            <h1>
+                TVAC <span>Qualification</span>
+            </h1>
+
+            <p class="project-subtitle">
+                My contribution towards qualifying a 1U CubeSat.
+            </p>
+
+        </div>
+
+
+        <!-- =========================================
+             HERO IMAGE
+             ========================================= -->
+
+        <div class="project-hero-image">
+
+            <img
+                src="{{ '/assets/images/kessler-tvac.jpeg' | relative_url }}"
+                alt="TVAC Setup of APSS-2"
+            >
+
+        </div>
+
+
+        <!-- =========================================
+             PROJECT / TECHNICAL CONCEPTS
+             ========================================= -->
+
+        <div class="project-grid">
+
+            <div class="project-section">
+
+                <p class="project-label">
+                    THE PROJECT
+                </p>
+
+                <h2>
+                    What was it?
+                </h2>
+
+                <p>
+                    To launch a satellite into space it must pass Thermal-Vacuum(TVAC) Qualification
+                    so that we know it will handle space conditions. I contributed to the TVAC setup and
+                    debugging of APSS-2, the CubeSat we were qualifying. 
+                </p>
+
+            </div>
+
+
+            <div class="project-section project-concepts">
+
+                <p class="project-label">
+                    TECHNICAL CONCEPTS
+                </p>
+
+                <h2>
+                    What was involved?
+                </h2>
+
+                <ul>
+
+                    <li>
+                        TVAC Interface Setup
+                    </li>
+
+                    <li>
+                        Payload Sensor Debugging
+                    </li>
+
+                    <li>
+                        TVAC Setup Troubleshooting
+                    </li>
+
+                    <li>
+                        Test Script Debugging
+                    </li>
+
+                    <li>
+                        Control Systems Sensor Calibration
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             WHAT I DID
+             ========================================= -->
+
+        <div class="project-text-section">
+
+            <p class="project-label">
+                MY CONTRIBUTION
+            </p>
+
+            <h2>
+                What I did
+            </h2>
+
+            <p>
+                I was responsible for ensuring all the Avionics on APSS-2 were functioning for the test.
+                I also helped out with debugging the TVAC test script and setup when we encountered issues 
+                before and after qualification.
+
+                On the side I was also the main engineering responsible for calibrating all the sensors on
+                the flight-payload which involved testing a high power control systems payload.
+                </thead>
+            </p>
+
+        </div>
+
+
+        <!-- =========================================
+             SECOND IMAGE
+             ========================================= -->
+
+        <div class="project-secondary-image">
+
+            <img
+                src="{{ '/assets/images/kessler-cleanroom.jpeg' | relative_url }}"
+                alt="APSS-2 PCB"
+            >
+
+        </div>
+
+
+        <!-- =========================================
+             CHALLENGE / LEARNING
+             ========================================= -->
+
+        <div class="project-two-column">
+
+            <div class="project-text-section">
+
+                <p class="project-label">
+                    ENGINEERING CHALLENGE
+                </p>
+
+                <h2>
+                    A challenge I faced
+                </h2>
+
+                <p>
+                    The test script was boot-looping which delayed qualification a lot. We investigated and
+                    narrowed the issue to a voltage drop across the interface cables that go from the outside to the
+                    inside of the TVAC chamber. I fixed it by compensating for the voltage drop and we also
+                    installed a new interface cable with half the resistance and double the number of GND paths
+                    that go from the power supplies outside the chamber to the payload.
+                </p>
+
+            </div>
+
+
+            <div class="project-text-section">
+
+                <p class="project-label">
+                    TAKEAWAY
+                </p>
+
+                <h2>
+                    What I learned
+                </h2>
+
+                <p>
+                    This was my first experience debugging a full space systems payload and also my first time
+                    seeing a real CubeSat Qualification. I learned a lot about the testing process and what makes
+                    a good test plan. I also understood the importance of good documentation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             TECHNOLOGIES
+             ========================================= -->
+
+        <div class="project-technologies">
+
+            <p class="project-label">
+                TECHNOLOGIES & SKILLS
+            </p>
+
+            <div class="project-tags">
+
+                <span>CubeSat Qualification</span>
+                <span>Test Engineering</span>
+                <span>Hardware Testing</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
