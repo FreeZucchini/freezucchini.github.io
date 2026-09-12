@@ -1124,6 +1124,19 @@ nav a:hover {
     line-height: 1.8;
 }
 
+/* =========================================
+   PROJECT CONCEPT LIST
+========================================= */
+
+.project-concepts ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.project-concepts li {
+    margin-bottom: 10px;
+}
+
 
 /* =========================================
    INDIVIDUAL PROJECT PAGE CARDS
