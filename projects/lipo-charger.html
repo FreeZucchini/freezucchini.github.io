@@ -71,8 +71,8 @@ title: Multi-Battery Charger
                     During our annual pico-satellite competition teams 
                     would charge their batteries one at a time. This was inefficient and
                     teams lost precious time to test their payloads before launch.
-                    I developed this PCB to charge 6-lipo's at once so all the teams could charge 
-                    their batteries at once.
+                    I developed this PCB to charge six LiPo batteries 
+                    simultaneously, allowing teams to charge their batteries in parallel.
                 </p>
 
             </div>
@@ -91,23 +91,27 @@ title: Multi-Battery Charger
                 <ul>
 
                     <li>
-                        Power Delivery ICs
+                        USB-C Power Delivery
                     </li>
 
                     <li>
-                        Circular PCB Design
+                        Power-delivery ICs
                     </li>
 
                     <li>
-                        High Power PCB Routing
+                        High-current PCB routing
                     </li>
 
                     <li>
-                        High Power Load Testing
+                        Battery charging
                     </li>
 
                     <li>
-                        Battery Charging ICs
+                        Circular PCB layout
+                    </li>
+
+                    <li>
+                        Hardware testing
                     </li>
 
                 </ul>
@@ -132,9 +136,12 @@ title: Multi-Battery Charger
             </h2>
 
             <p>
-                I came up with the circuit design, researched into Power Delivery ICs 
-                and choose the most suitable one. After finalizing on the components I designed
-                the entire PCB, ordered it and assembled it for testing.
+                When I took on this project it was just an idea, no schematic, and no prior research.
+                I started off by researching a Power Delivery IC that could deliver sufficient current for six LiPo
+                batteries while not requiring a microcontroller for configuration. I selected the AP33771CFBZ-13-FA01
+                IC because we can change the output current and voltage of the PD negotiation just by changing two resistors.
+                I then made the schematic and designed the PCB. I decided to make this a circular PCB and learned how 
+                to use Altium's polar grid.
             </p>
 
         </div>
@@ -171,11 +178,11 @@ title: Multi-Battery Charger
                 </h2>
 
                 <p>
-                    I was having trouble routing the USB-C connector to the PD IC
-                    in Altium. I was struggling to route this part of the board while
-                    maintaining the signal integrity of the Channel Configuration (CC) signal.
-                    To solve this problem took a bit of trail and error, many hours and a compromise
-                    of using 2 vias to route a CC line but the routing was completed well in the end.
+                    I was having trouble routing the USB-C connector to the AP33771CFBZ-13-FA01
+                    in Altium. I was struggling to route the USB-C connector to the AP33771CFBZ-13-FA01 
+                    while maintaining the required CC connections.
+                    I ultimately used two vias to route the CC connection, 
+                    allowing the rest of the board layout to remain compact.
                 </p>
 
             </div>

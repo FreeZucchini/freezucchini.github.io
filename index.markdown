@@ -19,8 +19,8 @@ title: Portfolio
             </h2>
 
             <p class="hero-description">
-                I enjoy building systems where hardware and software meet. 
-                My projects span embedded systems, PCB design, software development, 
+                I enjoy building systems where hardware and software meet.
+                My projects range from PCB and embedded-system design to software,
                 cloud-connected applications, and CubeSat avionics.
             </p>
 
@@ -51,7 +51,7 @@ title: Portfolio
 
         <p class="section-label">FEATURED WORK</p>
 
-        <h2>My Projects</h2>
+        <h2>What I've Worked On</h2>
 
         <div class="project-grid">
 
@@ -74,15 +74,14 @@ title: Portfolio
                     <h3>Radiation Detector</h3>
 
                     <p>
-                        A space-rated radiation detector that uses a
-                        dual-opamp analogue signal processing circuit to process
-                        radiation data collected via an SiPM. It is one of the payloads on
-                        the APSS-3 CubeSat.
+                        A space-rated radiation detector for the APSS-3 CubeSat using a
+                        silicon photomultiplier, analogue signal processing and peak detection
+                        to detect and measure radiation events.
                     </p>
 
                     <div class="tags">
-                        <span>Altium Designer</span>
-                        <span>Soldering and Testing</span>
+                        <span>PCB Design</span>
+                        <span>Analogue Signal Processing</span>
                         <span>Embedded C</span>
                     </div>
 
@@ -110,16 +109,15 @@ title: Portfolio
                     <h3>Multi LiPo Battery Charger</h3>
 
                     <p>
-                        This PCB can charge up to 6 LiPo batteries
-                        simultaneously. It was designed to charge batteries during our
-                        annual pico-satellite competition where teams would use those batteries
-                        for their payloads.
+                        A circular PCB designed to charge six LiPo batteries simultaneously
+                        for our annual pico-satellite competition, using USB-C Power Delivery
+                        and dedicated power-management circuitry.
                     </p>
 
                     <div class="tags">
-                        <span>High Power PCB Routing</span>
-                        <span>Power Delivery ICs</span>
-                        <span>High Power PCB Testing</span>
+                        <span>Altium Designer</span>
+                        <span>USB-C Power Delivery</span>
+                        <span>Power Electronics</span>
                     </div>
 
                 </div>
@@ -143,17 +141,18 @@ title: Portfolio
 
                 <div class="project-card-content">
 
-                    <h3>Thermal Vacuum Qualification of APSS-2</h3>
+                    <h3>Thermal-Vacuum Qualification of APSS-2</h3>
 
                     <p>
-                        Qualified the APSS-2 PCB for space conditions by helping out
-                        with the setup, debugging and software of the thermal-vacuum test. 
+                        Testing and debugging a CubeSat payload during thermal-vacuum
+                        qualification, including payload test software, sensor calibration
+                        and flight-readiness testing.
                     </p>
 
                     <div class="tags">
+                        <span>Thermal-Vacuum Testing</span>
+                        <span>Test Engineering</span>
                         <span>Sensor Calibration</span>
-                        <span>Hardware and Harness Setup</span>
-                        <span>Space-Systems</span>
                     </div>
 
                 </div>

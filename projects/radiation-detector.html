@@ -69,11 +69,11 @@ title: Radiation Detector
                 </h2>
 
                 <p>
-                    The radiation detector was designed to measure
-                    radiation events using a silicon photomultiplier
-                    and analogue signal-processing circuitry.
-                    The payload was developed for use on the
-                    APSS-3 CubeSat.
+                    I used an SiPM to detect UV light which is emitted by a crystal every time it detects radiation.
+                    The SiPM is biased by 29V using a DC-DC boost converter. After the SiPM detects the UV light, this
+                    weak signal is first passed through a high pass filter and then amplified.
+                    The amplified signal is passed into a peak detector which holds the voltage long enough
+                    for the ADC on our MSP430 microcontroller to register that radiation has been detected.
                 </p>
 
             </div>
@@ -92,23 +92,23 @@ title: Radiation Detector
                 <ul>
 
                     <li>
-                        Analogue signal processing
+                        Silicon photomultiplier
                     </li>
 
                     <li>
-                        Silicon photomultipliers
+                        Analogue signal conditioning
                     </li>
 
                     <li>
-                        Op-amp circuits
+                        Peak detection
                     </li>
 
                     <li>
-                        PCB design
+                        DC-DC boost conversion
                     </li>
 
                     <li>
-                        DC-DC Boosters
+                        I²C / SPI
                     </li>
 
                     <li>
@@ -137,10 +137,10 @@ title: Radiation Detector
             </h2>
 
             <p>
-                I worked on the analogue signal-processing circuitry,
-                and PCB design. I also soldered, and tested
-                the PCB successfully. Soldering was done using a hot-plate
-                and heat gun and testing was done using a power supply, 
+                I worked on the analogue signal-processing circuitry and PCB design. 
+                I also assembled and tested the PCB successfully. 
+                The PCB was assembled using a hot plate and 
+                heat gun and tested using a bench power supply, 
                 multimeter and oscilloscope.
             </p>
 
@@ -178,7 +178,7 @@ title: Radiation Detector
                 </h2>
 
                 <p>
-                    During testing, I had issues getting the opamp to output
+                    During testing, I had issues getting the op-amp to output
                     the correct amplified voltage. I went component by component and traced
                     out the issue to a short between two pins of the opamp.
 

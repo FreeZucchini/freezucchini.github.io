@@ -31,7 +31,8 @@ title: APSS-2 TVAC Qualification
             </h1>
 
             <p class="project-subtitle">
-                My contribution towards qualifying a 1U CubeSat.
+                Testing and debugging a CubeSat payload during
+                thermal-vacuum qualification and flight-readiness testing.
             </p>
 
         </div>
@@ -68,9 +69,19 @@ title: APSS-2 TVAC Qualification
                 </h2>
 
                 <p>
-                    To launch a satellite into space it must pass Thermal-Vacuum(TVAC) Qualification
-                    so that we know it will handle space conditions. I contributed to the TVAC setup and
-                    debugging of APSS-2, the CubeSat we were qualifying. 
+                    Before a CubeSat can be flown in space, its hardware must be tested
+                    under the environmental conditions it will experience during the
+                    mission. APSS-2 underwent thermal-vacuum (TVAC) qualification to
+                    verify that the spacecraft could operate reliably across temperature
+                    and pressure extremes.
+                </p>
+
+                <p>
+                    I worked on the testing and debugging of the APSS-2 payload,
+                    including the payload-board test software and sensor calibration.
+                    The payload could be operated using functional, automated and manual
+                    performance tests, with automated test scripts also used during
+                    environmental testing and intended for use during the mission.
                 </p>
 
             </div>
@@ -89,23 +100,27 @@ title: APSS-2 TVAC Qualification
                 <ul>
 
                     <li>
-                        TVAC Interface Setup
+                        Thermal-Vacuum Qualification
                     </li>
 
                     <li>
-                        Payload Sensor Debugging
+                        Payload Test Software
                     </li>
 
                     <li>
-                        TVAC Setup Troubleshooting
+                        Automated Test Scripts
                     </li>
 
                     <li>
-                        Test Script Debugging
+                        Sensor Calibration
                     </li>
 
                     <li>
-                        Control Systems Sensor Calibration
+                        Flight-Readiness Testing
+                    </li>
+
+                    <li>
+                        Hardware Debugging
                     </li>
 
                 </ul>
@@ -130,13 +145,18 @@ title: APSS-2 TVAC Qualification
             </h2>
 
             <p>
-                I was responsible for ensuring all the Avionics on APSS-2 were functioning for the test.
-                I also helped out with debugging the TVAC test script and setup when we encountered issues 
-                before and after qualification.
+                I was responsible for testing and debugging the payload-board test
+                software during the qualification campaign. I worked through the
+                different test modes and helped ensure the payload could be operated
+                reliably before, during and after environmental testing.
+            </p>
 
-                On the side I was also the main engineer responsible for calibrating all the sensors on
-                the flight-payload which involved testing a high power control systems payload.
-                </thead>
+            <p>
+                I also took responsibility for calibrating the sensors on the flight
+                payload. This involved learning how the payload operated, carrying out
+                measurements and verifying that the sensor readings were suitable for
+                flight. The payload itself was particularly challenging because it
+                contained a significant amount of power electronics.
             </p>
 
         </div>
@@ -150,7 +170,7 @@ title: APSS-2 TVAC Qualification
 
             <img
                 src="{{ '/assets/images/kessler-cleanroom.jpeg' | relative_url }}"
-                alt="APSS-2 PCB"
+                alt="APSS-2 PCB in the cleanroom"
             >
 
         </div>
@@ -173,11 +193,30 @@ title: APSS-2 TVAC Qualification
                 </h2>
 
                 <p>
-                    The test script was boot-looping which delayed qualification a lot. We investigated and
-                    narrowed the issue to a voltage drop across the interface cables that go from the outside to the
-                    inside of the TVAC chamber. I fixed it by compensating for the voltage drop and we also
-                    installed a new interface cable with half the resistance and double the number of GND paths
-                    that go from the power supplies outside the chamber to the payload.
+                    During testing, the payload test software began boot-looping,
+                    preventing the qualification tests from running correctly.
+                    We investigated the problem and narrowed it down to a voltage drop
+                    across the interface cables connecting the payload inside the TVAC
+                    chamber to the equipment outside.
+                </p>
+
+                <p>
+                    I compensated for the voltage drop and we subsequently installed
+                    a new interface cable with approximately half the resistance and
+                    twice the number of ground paths. This resolved the power issue and
+                    allowed testing to continue.
+                </p>
+
+                <p>
+                    Moving forward we are now preparing for the qualification of our flight payload.
+                    I have taken the responsibility of ensuring we have all the interfaces on the umbilical PCB
+                    on the APSS-2 to ensure we can collect enough data during environmental testing, charge the battery
+                    before launch and also communicate with the onboard-computer.
+                </p>
+
+                <p>
+                    I am also writing a battery test plan
+                    to ensure the battery we have is flight ready.
                 </p>
 
             </div>
@@ -194,9 +233,16 @@ title: APSS-2 TVAC Qualification
                 </h2>
 
                 <p>
-                    This was my first experience debugging a full space systems payload and also my first time
-                    seeing a real CubeSat Qualification. I learned a lot about the testing process and what makes
-                    a good test plan. I also understood the importance of good documentation.
+                    This was my first experience debugging a complete space-system
+                    payload during qualification testing. I learned how hardware,
+                    software, test equipment and environmental conditions all interact
+                    during system-level testing.
+                </p>
+
+                <p>
+                    I also gained a much better understanding of the importance of
+                    structured test plans, good documentation and repeatable automated
+                    testing when preparing hardware for flight.
                 </p>
 
             </div>
@@ -216,9 +262,12 @@ title: APSS-2 TVAC Qualification
 
             <div class="project-tags">
 
-                <span>CubeSat Qualification</span>
+                <span>Thermal-Vacuum Testing</span>
                 <span>Test Engineering</span>
-                <span>Hardware Testing</span>
+                <span>Embedded Software</span>
+                <span>Sensor Calibration</span>
+                <span>Hardware Debugging</span>
+                <span>Flight Readiness</span>
 
             </div>
 
