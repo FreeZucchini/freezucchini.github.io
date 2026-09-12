@@ -19,9 +19,9 @@ title: Portfolio
             </h2>
 
             <p class="hero-description">
-                This is a little space where I showcase some 
-                of the projects I have worked on. They range from a simple LoRa PCB
-                to a the qualification of a 1U CubeSat for space!
+                I enjoy building systems where hardware and software meet.
+                My projects span embedded systems, PCB design, software development,
+                cloud-connected applications, and CubeSat avionics.
             </p>
 
             <div class="hero-buttons">
@@ -51,77 +51,11 @@ title: Portfolio
 
         <p class="section-label">FEATURED WORK</p>
 
-        <h2>My Projects</h2>
+        <h2>What I've Worked On</h2>
 
         <div class="project-grid">
 
-            <a
-                href="{{ '/projects/radiation-detector.html' | relative_url }}"
-                class="project-card"
-            >
-
-                <div class="project-card-image">
-                    <img
-                        src="{{ '/assets/images/rad.jpeg' | relative_url }}"
-                        alt="Radiation Detector PCB Image"
-                    >
-                </div>
-
-                <div class="project-card-content">
-
-                    <h3>Radiation Detector</h3>
-
-                    <p>
-                        A space-rated radiation detector that uses a
-                        dual-opamp analogue signal processing circuit to process
-                        radiation data collected via an SiPM. It is one of the payloads on
-                        the APSS-3 CubeSat.
-                    </p>
-
-                    <div class="tags">
-                        <span>Altium Designer</span>
-                        <span>Soldering and Testing</span>
-                        <span>Embedded C</span>
-                    </div>
-
-                </div>
-
-            </a>
-
-
-            <a
-                href="{{ '/projects/lipo-charger.html' | relative_url }}"
-                class="project-card"
-            >
-
-                <div class="project-card-image">
-                    <img
-                        src="{{ '/assets/images/lipo-charger.jpeg' | relative_url }}"
-                        alt="Multi-Battery Charger PCB"
-                    >
-                </div>
-
-                <div class="project-card-content">
-
-                    <h3>Multi LiPo Battery Charger</h3>
-
-                    <p>
-                        This PCB can charge up to 6 LiPo batteries
-                        simultaneously. It was designed to charge batteries during our
-                        annual pico-satellite competition where teams would use those batteries
-                        for their payloads.
-                    </p>
-
-                    <div class="tags">
-                        <span>High Power PCB Routing</span>
-                        <span>Power Delivery ICs</span>
-                        <span>High Power PCB Testing</span>
-                    </div>
-
-                </div>
-
-            </a>
-
+            <!-- APSS -->
 
             <a
                 href="{{ '/projects/apss-2-tvac.html' | relative_url }}"
@@ -131,23 +65,94 @@ title: Portfolio
                 <div class="project-card-image">
                     <img
                         src="{{ '/assets/images/kessler.jpeg' | relative_url }}"
-                        alt="APSS-2 PCB"
+                        alt="APSS-2 CubeSat PCB"
                     >
                 </div>
 
                 <div class="project-card-content">
 
-                    <h3>Thermal Vacuum Qualification of APSS-2</h3>
+                    <h3>CubeSat Avionics</h3>
 
                     <p>
-                        Qualified the APSS-2 PCB for space conditions by helping out
-                        with the setup, debugging and software of the thermal-vacuum test. 
+                        As Avionics Team Lead for the Auckland Programme for Space Systems,
+                        I work across avionics development, testing and system integration,
+                        including qualification testing of CubeSat hardware.
                     </p>
 
                     <div class="tags">
-                        <span>Sensor Calibration</span>
-                        <span>Hardware and Harness Setup</span>
-                        <span>Space-Systems</span>
+                        <span>Embedded Systems</span>
+                        <span>Hardware Testing</span>
+                        <span>Space Systems</span>
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- Radiation Detector -->
+
+            <a
+                href="{{ '/projects/radiation-detector.html' | relative_url }}"
+                class="project-card"
+            >
+
+                <div class="project-card-image">
+                    <img
+                        src="{{ '/assets/images/rad.jpeg' | relative_url }}"
+                        alt="Radiation Detector PCB"
+                    >
+                </div>
+
+                <div class="project-card-content">
+
+                    <h3>Radiation Detector</h3>
+
+                    <p>
+                        A space-rated radiation detector designed for the APSS-3 CubeSat,
+                        using a silicon photomultiplier and analogue signal processing
+                        to detect and process weak radiation signals.
+                    </p>
+
+                    <div class="tags">
+                        <span>PCB Design</span>
+                        <span>Analogue Signal Processing</span>
+                        <span>Embedded C</span>
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- Software -->
+
+            <a
+                href="#"
+                class="project-card"
+            >
+
+                <div class="project-card-image">
+                    <img
+                        src="{{ '/assets/images/car-charging.jpeg' | relative_url }}"
+                        alt="Car Charging Console"
+                    >
+                </div>
+
+                <div class="project-card-content">
+
+                    <h3>Car Charging Console</h3>
+
+                    <p>
+                        A cloud-connected EV charging application built with Svelte,
+                        C#, Azure Functions and Azure IoT Hub, connecting a web interface
+                        to a simulated vehicle charging device.
+                    </p>
+
+                    <div class="tags">
+                        <span>Svelte</span>
+                        <span>C#</span>
+                        <span>Azure IoT</span>
                     </div>
 
                 </div>
