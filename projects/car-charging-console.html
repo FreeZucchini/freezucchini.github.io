@@ -1,0 +1,279 @@
+---
+layout: default
+title: Car Charging Console
+---
+
+<section class="project-page">
+
+    <div class="project-page-container">
+
+        <!-- Back -->
+        <a
+            href="{{ '/' | relative_url }}#projects"
+            class="project-back"
+        >
+            ← Back to Projects
+        </a>
+
+
+        <!-- =========================================
+             PROJECT HEADER
+             ========================================= -->
+
+        <div class="project-header">
+
+            <p class="section-label">
+                SOFTWARE & IOT
+            </p>
+
+            <h1>
+                Car Charging <span>Console</span>
+            </h1>
+
+            <p class="project-subtitle">
+                A cloud-connected application for controlling and scheduling
+                an electric vehicle charging system.
+            </p>
+
+        </div>
+
+
+        <!-- =========================================
+             HERO IMAGE
+             ========================================= -->
+
+        <div class="project-hero-image">
+
+            <img
+                src="{{ '/assets/images/car-charging-frontend.png' | relative_url }}"
+                alt="Car Charging Console interface"
+            >
+
+        </div>
+
+
+        <!-- =========================================
+             PROJECT / TECHNICAL CONCEPTS
+             ========================================= -->
+
+        <div class="project-grid">
+
+            <div class="project-section">
+
+                <p class="project-label">
+                    THE PROJECT
+                </p>
+
+                <h2>
+                    What was it?
+                </h2>
+
+                <p>
+                    I built a web application for managing an electric vehicle
+                    charging system. The application allows a user to start and
+                    stop charging, view the vehicle state and configure a charging
+                    schedule.
+                </p>
+
+                <p>
+                    The project uses a Svelte frontend, a C# backend hosted in
+                    Azure Functions and Azure IoT Hub to communicate with a
+                    simulated vehicle. This gave me experience building a complete
+                    system across the frontend, backend, cloud and device layers.
+                </p>
+
+            </div>
+
+
+            <div class="project-section project-concepts">
+
+                <p class="project-label">
+                    TECHNICAL CONCEPTS
+                </p>
+
+                <h2>
+                    What was involved?
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Svelte Frontend
+                    </li>
+
+                    <li>
+                        C# Backend
+                    </li>
+
+                    <li>
+                        REST APIs
+                    </li>
+
+                    <li>
+                        Azure Functions
+                    </li>
+
+                    <li>
+                        Azure IoT Hub
+                    </li>
+
+                    <li>
+                        Device Communication
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             WHAT I DID
+             ========================================= -->
+
+        <div class="project-text-section">
+
+            <p class="project-label">
+                MY CONTRIBUTION
+            </p>
+
+            <h2>
+                What I did
+            </h2>
+
+            <p>
+                I developed both the frontend and backend of the application.
+                The frontend was built using Svelte, while the backend was
+                implemented in C# using Azure Functions.
+            </p>
+
+            <p>
+                I created REST API endpoints for starting and stopping charging
+                and for configuring charging schedules. These commands were then
+                sent through Azure IoT Hub to a simulated vehicle device.
+            </p>
+
+            <p>
+                The simulated car is a simple C# console program that mimics a real life electric car.
+            </p>
+
+            <p>
+                I also implemented persistent client-side state so that charging
+                status, battery percentage and charging schedules could be retained
+                by the application.
+            </p>
+
+        </div>
+
+
+        <!-- =========================================
+             CHALLENGE / LEARNING
+             ========================================= -->
+
+        <div class="project-two-column">
+
+            <div class="project-text-section">
+
+                <p class="project-label">
+                    ENGINEERING CHALLENGE
+                </p>
+
+                <h2>
+                    A challenge I faced
+                </h2>
+
+                <p>
+                    I encountered a really annoying bug where each time I set or cancelled the charging
+                    schedule the schedule would set but the response would return as a 502 error.
+                    I recognised that the 502 error was coming from the second POST request sent and I setup
+                    debug prints into the console to find out why.
+                    I isolated the bug to one line where the response to the set and cancel schedule commands 
+                    was "OK" converted into bytes when GetBytes only accepts JSON and not a string.
+                </p>
+
+                <p>
+                    This required me debugging across multiple layers which improved my attention to detail,
+                    and taught me how errors can propogate through an application.
+                </p>
+
+            </div>
+
+
+            <div class="project-text-section">
+
+                <p class="project-label">
+                    TAKEAWAY
+                </p>
+
+                <h2>
+                    What I learned
+                </h2>
+
+                <p>
+                    This project gave me practical experience building a complete
+                    cloud-connected system as it was my first time using Azure.
+                    I developed a greater appreciation for how IoT systems work and
+                    this has given me more motivation to do more IoT projects.
+                </p>
+
+                <p>
+                    I also developed a better understanding of REST APIs and its architecture, 
+                    cloud services and HTTP status codes.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             TECHNOLOGIES
+             ========================================= -->
+
+        <div class="project-technologies">
+
+            <p class="project-label">
+                SOURCE CODE
+            </p>
+
+            <h2>
+                View the project
+            </h2>
+
+            <p>
+                The source code for the Car Charging Console is available on GitHub.
+            </p>
+
+            <a
+                href="https://github.com/FreeZucchini/CarChargingConsole"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View on GitHub →
+            </a>
+
+        </div>
+
+        <div class="project-technologies">
+
+            <p class="project-label">
+                TECHNOLOGIES & SKILLS
+            </p>
+
+            <div class="project-tags">
+
+                <span>Svelte</span>
+                <span>C#</span>
+                <span>Azure Functions</span>
+                <span>Azure IoT Hub</span>
+                <span>REST APIs</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
