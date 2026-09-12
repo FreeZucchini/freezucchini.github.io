@@ -1128,10 +1128,6 @@ nav a:hover {
    PROJECT CONCEPT LIST
 ========================================= */
 
-/* =========================================
-   PROJECT CONCEPT LIST
-========================================= */
-
 .project-page .project-concepts ul {
     list-style-position: outside;
     padding-left: 22px !important;
@@ -1140,7 +1136,7 @@ nav a:hover {
 
 .project-page .project-concepts li {
     display: list-item;
-    margin: 0 0 12px 0 !important;
+    margin: 0 0 4px 0 !important;
     padding: 0 !important;
     line-height: 1.8;
 }
